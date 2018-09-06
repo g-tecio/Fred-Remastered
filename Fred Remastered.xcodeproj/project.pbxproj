@@ -8,26 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		570503772140C9B2002C9770 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570503762140C9B2002C9770 /* AppDelegate.swift */; };
-		570503792140C9B2002C9770 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 570503782140C9B2002C9770 /* GameScene.sks */; };
-		5705037B2140C9B2002C9770 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 5705037A2140C9B2002C9770 /* Actions.sks */; };
 		5705037D2140C9B2002C9770 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5705037C2140C9B2002C9770 /* GameScene.swift */; };
 		5705037F2140C9B3002C9770 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5705037E2140C9B3002C9770 /* GameViewController.swift */; };
 		570503822140C9B3002C9770 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 570503802140C9B3002C9770 /* Main.storyboard */; };
 		570503842140C9B5002C9770 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 570503832140C9B5002C9770 /* Assets.xcassets */; };
 		570503872140C9B5002C9770 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 570503852140C9B5002C9770 /* LaunchScreen.storyboard */; };
+		5710DF0C2140DF2E00581A05 /* GameControls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5710DF0B2140DF2E00581A05 /* GameControls.swift */; };
+		5710DF0F2141187F00581A05 /* GameSwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5710DF0E2141187F00581A05 /* GameSwitch.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		570503732140C9B2002C9770 /* Fred Remastered.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fred Remastered.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		570503762140C9B2002C9770 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		570503782140C9B2002C9770 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
-		5705037A2140C9B2002C9770 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
 		5705037C2140C9B2002C9770 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		5705037E2140C9B3002C9770 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		570503812140C9B3002C9770 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		570503832140C9B5002C9770 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		570503862140C9B5002C9770 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		570503882140C9B5002C9770 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5710DF0B2140DF2E00581A05 /* GameControls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameControls.swift; sourceTree = "<group>"; };
+		5710DF0E2141187F00581A05 /* GameSwitch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSwitch.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,16 +61,24 @@
 			isa = PBXGroup;
 			children = (
 				570503762140C9B2002C9770 /* AppDelegate.swift */,
-				570503782140C9B2002C9770 /* GameScene.sks */,
-				5705037A2140C9B2002C9770 /* Actions.sks */,
-				5705037C2140C9B2002C9770 /* GameScene.swift */,
 				5705037E2140C9B3002C9770 /* GameViewController.swift */,
+				5710DF0D2140DF3800581A05 /* Menu */,
 				570503802140C9B3002C9770 /* Main.storyboard */,
 				570503832140C9B5002C9770 /* Assets.xcassets */,
 				570503852140C9B5002C9770 /* LaunchScreen.storyboard */,
 				570503882140C9B5002C9770 /* Info.plist */,
 			);
 			path = "Fred Remastered";
+			sourceTree = "<group>";
+		};
+		5710DF0D2140DF3800581A05 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				5705037C2140C9B2002C9770 /* GameScene.swift */,
+				5710DF0B2140DF2E00581A05 /* GameControls.swift */,
+				5710DF0E2141187F00581A05 /* GameSwitch.swift */,
+			);
+			path = Menu;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -132,10 +140,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				570503822140C9B3002C9770 /* Main.storyboard in Resources */,
-				570503792140C9B2002C9770 /* GameScene.sks in Resources */,
 				570503842140C9B5002C9770 /* Assets.xcassets in Resources */,
 				570503872140C9B5002C9770 /* LaunchScreen.storyboard in Resources */,
-				5705037B2140C9B2002C9770 /* Actions.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -148,7 +154,9 @@
 			files = (
 				5705037D2140C9B2002C9770 /* GameScene.swift in Sources */,
 				5705037F2140C9B3002C9770 /* GameViewController.swift in Sources */,
+				5710DF0F2141187F00581A05 /* GameSwitch.swift in Sources */,
 				570503772140C9B2002C9770 /* AppDelegate.swift in Sources */,
+				5710DF0C2140DF2E00581A05 /* GameControls.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
